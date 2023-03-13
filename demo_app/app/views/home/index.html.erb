@@ -1,0 +1,6 @@
+<% if user_signed_in? %>
+  <h1>Hello  <%= current_user.email %>!</h1>
+  <%= link_to "Show comments", comments_path %>
+<% else %>
+  <h1>Hello Stranger!</h1>
+<% end %>
